@@ -1,0 +1,62 @@
+@import './normalize.css';
+@import '../font/iconfont.css';
+
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table; /* 准换位块级元素，并在一行显示*/
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+html,
+body {
+  height: 100%;
+  min-width: 1366px;
+  background: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.el-breadcrumb {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+.el-card {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) !important;
+}
+.el-table {
+  margin-top: 15px;
+}
+.el-pagination {
+  margin-top: 15px;
+}
+.el-cascader-panel {
+  height: 300px;
+}
+.el-steps {
+  margin: 15px 0;
+}
+.el-step__title {
+  font-size: 13px;
+}

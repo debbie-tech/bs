@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0"
+    />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>
+      <%= htmlWebpackPlugin.options.isProd ? '' : '' %>PrixBank
+    </title>
+    <% if(htmlWebpackPlugin.options.isProd){ %>
+    <!-- nprogress 顶部进度条样式 -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/nprogress@0.2.0/nprogress.css"
+    />
+    <!-- vue-quill-editor 富文本编辑器样式 CDN 链接找不到 -->
+    <!-- <link rel="stylesheet" href="path/to/quill.core.css" />
+    <link rel="stylesheet" href="path/to/quill.snow.css" />
+    <link rel="stylesheet" href="path/to/quill.bubble.css" /> -->
+    <!-- Element UI 样式 -->
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/element-ui/2.13.2/theme-chalk/index.css"
+      rel="stylesheet"
+    />
+
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <!-- vue-router -->
+    <script src="https://unpkg.com/vue-router@3.3.4/dist/vue-router.js"></script>
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- nprogress -->
+    <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+    <!-- vue-quill-editor CDN 链接找不到 -->
+    <!-- <script type="text/javascript" src="path/to/quill.js"></script>
+    <script
+      type="text/javascript"
+      src="path/to/dist/vue-quill-editor.js"
+    ></script> -->
+    <!-- lodash -->
+    <script src="https://cdn.staticfile.org/lodash.js/4.17.15/lodash.min.js"></script>
+    <!-- ECharts -->
+    <script src="https://cdn.staticfile.org/echarts/4.8.0/echarts-en.min.js"></script>
+    <!-- Element UI -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/element-ui/2.13.2/index.js"></script>
+    <% } %>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
